@@ -6,6 +6,11 @@ using System.Threading.Tasks;
 
 namespace ViewManager_API.Exception
 {
+    /**
+     * Exception class for inaproppriate control naming
+     * 
+     * @author Grigorios 
+     **/
     public class ControlNamingException : System.Exception
     {
         String exceptionMessage;
