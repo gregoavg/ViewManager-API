@@ -36,12 +36,6 @@ namespace ViewManager_API.ViewManager
             {
                 System.Console.WriteLine(ex.ToString());
             }
-            /**
-             * @HACK
-             * not sure about this
-             * but this is still the only way i found to keep the form open
-             **/
-            Application.Run(contentView);
         }
 
         /**
@@ -65,6 +59,11 @@ namespace ViewManager_API.ViewManager
         public Form getContentView()
         {
             return contentView;
+        }
+
+        public void setContentVisibility(Boolean VisibleState)
+        {
+            contentView.Visible = VisibleState;
         }
     }
 }
