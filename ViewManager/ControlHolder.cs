@@ -86,5 +86,15 @@ namespace ViewManager_API.ViewManager
             }
         }
 
+        public Dictionary<String, Control> getControlDictionary()
+        {
+            return this.controlDictionary;
+        }
+
+        public void setControlDictionary(Dictionary<String, Control> controlDictionary)
+        {
+            this.controlDictionary = controlDictionary;
+        }
+
     }
 }
