@@ -65,5 +65,11 @@ namespace ViewManager_API.ViewManager
         {
             contentView.Visible = VisibleState;
         }
+
+        public void OpenViewManager(AbstractViewManager viewManger)
+        {
+            viewManger.Manage();
+            viewManger.setContentVisibility(true);
+        }
     }
 }
